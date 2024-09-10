@@ -11,7 +11,7 @@ async def download_instagram_video(client, message):
             "Pʟᴇᴀsᴇ ᴘʀᴏᴠɪᴅᴇ ᴛʜᴇ Iɴsᴛᴀɢʀᴀᴍ ʀᴇᴇʟ URL ᴀғᴛᴇʀ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ"
         )
         return
-    a = await message.reply_text("ᴘʀᴏᴄᴇssɪɴɢ...")
+    a = await message.reply_text("Processing...")
     url = message.text.split()[1]
     api_url = (
         f"https://nodejs-1xn1lcfy3-jobians.vercel.app/v2/downloader/instagram?url={url}"
@@ -25,11 +25,11 @@ async def download_instagram_video(client, message):
         await a.delete()
         await client.send_video(message.chat.id, video_url)
     else:
-        await a.edit("Fᴀɪʟᴇᴅ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ʀᴇᴇʟ")
+        await a.edit("Failed to Download Reels.")
 
 
-__MODULE__ = "Iɴsᴛᴀɢʀᴀᴍ"
-__HELP__ = """/reel [ɪɴsᴛᴀɢʀᴀᴍ ʀᴇᴇʟ ᴜʀʟ] - Tᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜᴇ ʀᴇᴇʟ ʙʏ ʙᴏᴛ
-/ig [ɪɴsᴛᴀɢʀᴀᴍ ʀᴇᴇʟ ᴜʀʟ] - Tᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜᴇ ʀᴇᴇʟ ʙʏ ʙᴏᴛ
-/instagram [ɪɴsᴛᴀɢʀᴀᴍ ʀᴇᴇʟ ᴜʀʟ] - Tᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜᴇ ʀᴇᴇʟ ʙʏ ʙᴏᴛ
+__MODULE__ = "Instagram"
+__HELP__ = """/reel [Instagram Reel URL] - To Download Reel by Bot
+/ig [Instagram Reel URL] - To Download Reel by Bot
+/instagram [Instagram Reel URL] - To Download Reel by Bot
 """

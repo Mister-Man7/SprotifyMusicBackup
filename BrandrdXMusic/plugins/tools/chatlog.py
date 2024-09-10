@@ -34,15 +34,15 @@ async def join_watcher(_, message):
             if members.id == app.id:
                 count = await app.get_chat_members_count(chat.id)
                 username = (
-                    message.chat.username if message.chat.username else "𝐏ʀɪᴠᴀᴛᴇ 𝐆ʀᴏᴜᴘ"
+                    message.chat.username if message.chat.username else "Private Group"
                 )
                 msg = (
-                    f"**📝𝐌ᴜsɪᴄ 𝐁ᴏᴛ 𝐀ᴅᴅᴇᴅ 𝐈ɴ 𝐀 #𝐍ᴇᴡ_𝐆ʀᴏᴜᴘ**\n\n"
-                    f"**📌𝐂ʜᴀᴛ 𝐍ᴀᴍᴇ:** {message.chat.title}\n"
-                    f"**🍂𝐂ʜᴀᴛ 𝐈ᴅ:** {message.chat.id}\n"
-                    f"**🔐𝐂ʜᴀᴛ 𝐔sᴇʀɴᴀᴍᴇ:** @{username}\n"
-                    f"**📈𝐆ʀᴏᴜᴘ 𝐌ᴇᴍʙᴇʀs:** {count}\n"
-                    f"**🤔𝐀ᴅᴅᴇᴅ 𝐁ʏ:** {message.from_user.mention}"
+                    f"**📝 Music Bot Added in a #NewGroup**\n\n"
+                    f"**❐ Chat Name:** {message.chat.title}\n"
+                    f"**❐ Chat ID:** {message.chat.id}\n"
+                    f"**❐ Chat Username:** @{username}\n"
+                    f"**❐ Group Member:** {count}\n"
+                    f"**└Added by:** {message.from_user.mention}"
                 )
                 await app.send_photo(
                     LOG_GROUP_ID,
@@ -52,7 +52,7 @@ async def join_watcher(_, message):
                         [
                             [
                                 InlineKeyboardButton(
-                                    f"😍𝐀ᴅᴅᴇᴅ 𝐁ʏ😍",
+                                    f"Added by {message.from_user.first_name}",
                                     url=f"tg://openmessage?user_id={message.from_user.id}",
                                 )
                             ]

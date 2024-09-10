@@ -32,7 +32,7 @@ def dt_tom():
 tomorrow = str(dt_tom())
 today = str(dt()[0])
 
-@app.on_message(filters.command("couples"))
+@app.on_message(filters.command("shipping"))
 async def ctest(_, message):
     cid = message.chat.id
     if message.chat.type == ChatType.PRIVATE:
@@ -97,11 +97,12 @@ async def ctest(_, message):
          img.save(f'test_{cid}.png')
     
          TXT = f"""
-**ᴛᴏᴅᴀʏ's ᴄᴏᴜᴘʟᴇ ᴏғ ᴛʜᴇ ᴅᴀʏ :
+**Pasangan hari ini:**
 
 {N1} + {N2} = 💚
 
-ɴᴇxᴛ ᴄᴏᴜᴘʟᴇs ᴡɪʟʟ ʙᴇ sᴇʟᴇᴄᴛᴇᴅ ᴏɴ {tomorrow} !!**
+__💫 Cinta mereka bersemi bagai mentari yang tak pernah padam, menyinari dunia dengan hangatnya. Selalu harmonis, selalu serasi!__
+**🔥 Siapakah pasangan keren berikutnya? Tunggu tanggal 10 September 2024 untuk pengumumannya! {tomorrow} !!**
 """
     
          await message.reply_photo(f"test_{cid}.png", caption=TXT)
@@ -140,9 +141,9 @@ async def ctest(_, message):
        pass
          
 
-__mod__ = "COUPLES"
+__mod__ = "Couples"
 __help__ = """
-**» /couples** - Get Todays Couples Of The Group In Interactive View
+**/shipping** - Get Todays Couples Of The Group In Interactive View
 """
 
 
