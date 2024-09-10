@@ -1,5 +1,5 @@
 import math
-
+import config
 from pyrogram.types import InlineKeyboardButton
 
 from BrandrdXMusic.utils.formatters import time_to_seconds
@@ -68,10 +68,10 @@ def stream_markup_timer(_, vidid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="⛦ ᴏᴡɴᴇʀ ❥", url=f"https://t.me/BRANDEDKING8"
+                text="😎 Owner", url=f"https://t.me/EasyWinter"
             ),
             InlineKeyboardButton(
-                text="⛦ ᴄʜᴀᴛ ❥", url=f"https://t.me/BRANDED_WORLD"
+                text="Updates", url=f"https://t.me/{config.SUPPORT_CHANNEL}"
             ),
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
@@ -90,10 +90,10 @@ def stream_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="⛦ ᴏᴡɴᴇʀ ❥", url=f"https://t.me/BRANDEDKING8"
+                text="😎 Owner", url=f"https://t.me/EasyWinter"
             ),
             InlineKeyboardButton(
-                text="⛦ ᴄʜᴀᴛ ❥", url=f"https://t.me/BRANDED_WORLD"
+                text="Updates", url=f"https://t.me/{config.SUPPORT_CHANNEL}"
             ),
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
@@ -245,10 +245,10 @@ def stream_markup2(_, chat_id):
         ],
 [
             InlineKeyboardButton(
-                text="⛦ ᴏᴡɴᴇʀ ❥", url=f"https://t.me/BRANDEDKING8"
+                text="😎 Owner", url=f"https://t.me/EasyWinter"
             ),
             InlineKeyboardButton(
-                text="⛦ ᴄʜᴀᴛ ❥", url=f"https://t.me/BRANDED_WORLD"
+                text="Updates", url=f"https://t.me/{config.SUPPORT_CHANNEL}"
             ),
         ],
 
