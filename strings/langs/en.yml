@@ -221,8 +221,8 @@ queue_6 : "<b>❐ Duration :</b> Unknown Duration Stream\n\nClick on the button 
 queue_7 : "\nClick on the button below to get the whole queued list."
 queue_8 : "<b>{0} Player</b>\n\n❐ <b>Streaming :</b> {1}\n\n❐ <b>Stream Type :</b> {2}\n <b>└Added By :</b> {3}\n{4}"
 
-stream_1 : "❐ <b>Started Streaming</b>\n|\n<b>└❐ Title :</b> <a href={0}>{1}</a>\n<b>└❐ Duration :</b> {2} Minutes\n<b>└❐ Requested By :</b> {3}"
-stream_2 : "❐ <b>Started Streaming</b>\n|\n<b>└❐ Stream Type :</b> Live Stream [URL]\n<b>└❐ Requested By :</b> {0}"
+stream_1 : "❐ <b>Started Streaming</b>\n\n<b>└Title :</b> <a href={0}>{1}</a>\n<b>└Duration :</b> {2} Minutes\n<b>└Requested by :</b> {3}"
+stream_2 : "❐ <b>Started Streaming</b>\n\n<b>└Stream Type :</b> Live Stream [URL]\n<b>└Requested By :</b> {0}"
 stream_3 : "➲ <b>Made by ➠ [EasyWinter](https://t.me/EasyWinter)"
 
 #General
