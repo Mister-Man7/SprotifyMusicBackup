@@ -11,15 +11,6 @@ from pyrogram.enums import *
 from BrandrdXMusic import app as app
 from BrandrdXMusic.mongo.couples_db import _get_image, get_couple
 
-POLICE = [
-    [
-        InlineKeyboardButton(
-            text="ᴍʏ ᴄᴜᴛᴇ ᴅᴇᴠᴇʟᴏᴘᴇʀ  🥀",
-            url=f"https://t.me/BRANDED_PAID_CC",
-        ),
-    ],
-]
-
 
 def dt():
     now = datetime.now()
@@ -113,8 +104,7 @@ async def ctest(_, message):
 ɴᴇxᴛ ᴄᴏᴜᴘʟᴇs ᴡɪʟʟ ʙᴇ sᴇʟᴇᴄᴛᴇᴅ ᴏɴ {tomorrow} !!**
 """
     
-         await message.reply_photo(f"test_{cid}.png", caption=TXT, reply_markup=InlineKeyboardMarkup(POLICE),
-    )
+         await message.reply_photo(f"test_{cid}.png", caption=TXT)
          await msg.delete()
          a = upload_file(f"test_{cid}.png")
          for x in a:
